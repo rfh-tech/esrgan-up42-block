@@ -8,6 +8,8 @@ LABEL "up42_manifest"=$manifest
 WORKDIR /block
 COPY $BUILD_DIR/requirements.txt /block
 
+RUN pip install --upgrade pip
+
 RUN pip install -r requirements.txt
 
 COPY $BUILD_DIR/src /block/src

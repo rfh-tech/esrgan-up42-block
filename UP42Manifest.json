@@ -1,39 +1,42 @@
 {
-    "_up42_specification_version": 2,
-    "name": "rfh-super-resolution",
-    "type": "processing",
-    "tags": [
-        "imagery",
-        "processing",
-        "preprocessing",
-        "filtering",
-        "filter",
-        "sharpening",
-        "sharpen",
-        "highpass",
-        "gan",
-        "super-resolution"
-    ],
-    "display_name": "RFH Super Resolution",
-    "description": "Runs a raster image through an Enhanced Super Resolution Generative Adversarial Network to increase spatial resolution.",
-    "parameters": {
-        "strength": {"type": "string", "default": "medium"}
-    },
-    "machine": {
-	    "type": "large"
-    },
-    "input_capabilities": {
-        "raster": {
-            "up42_standard": {
-                "format": "GTiff"
-            }
-        }
-    },
-    "output_capabilities": {
-        "raster": {
-            "up42_standard": {
-                "format": "GTiff"
-            }
-        }
+  "_up42_specification_version": 2,
+  "name": "rfh-super-resolution",
+  "type": "processing",
+  "tags": [
+    "imagery",
+    "processing",
+    "preprocessing",
+    "filtering",
+    "filter",
+    "sharpening",
+    "sharpen",
+    "highpass",
+    "gan",
+    "super-resolution"
+  ],
+  "display_name": "RFH Super Resolution",
+  "description": "Runs a raster image through an Enhanced Super Resolution Generative Adversarial Network to increase spatial resolution.",
+  "parameters": {
+    "strength": {
+      "type": "string",
+      "default": "medium"
     }
+  },
+  "machine": {
+    "type": "large"
+  },
+  "input_capabilities": {
+    "raster": {
+      "up42_standard": {
+        "format": "GTiff"
+      }
+    }
+  },
+  "output_capabilities": {
+    "raster": {
+      "up42_standard": {
+        "format": "GTiff"
+      }
+    }
+  }
 }
